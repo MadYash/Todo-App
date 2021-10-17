@@ -38,7 +38,7 @@ def Products():
     return "This is product page "
 
 
-@app.route('/update/<int:sno>',methods=['GET','POST'])
+@app.route('/update/<int:sno>', methods=['GET','POST'])
 def update(sno):
     if request.method=='POST':
         title = (request.form['title'])
